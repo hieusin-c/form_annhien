@@ -45,12 +45,7 @@
         <!-- Logo / Branding header -->
         <div class="text-center mb-8">
             <a href="{{ route('consultation.index') }}" class="inline-flex items-center gap-2 mb-3">
-                <div class="bg-teal-600 text-white p-2.5 rounded-2xl shadow-lg shadow-teal-600/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                    </svg>
-                </div>
-                <span class="font-bold text-xl text-slate-800 tracking-tight">Sức Khỏe <span class="text-teal-600">Cộng Đồng</span></span>
+                <img src="{{ asset('logo.png') }}" alt="Dược An Nhiên" class="h-16 w-auto object-contain">
             </a>
             <h1 class="text-lg font-bold text-slate-700">Đăng nhập cổng quản trị</h1>
             <p class="text-xs text-slate-400">Vui lòng điền tài khoản để duyệt hồ sơ tư vấn</p>
