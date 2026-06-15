@@ -1,0 +1,20 @@
+# Nhận Tư Vấn Sức Khỏe Cộng Đồng Miễn Phí
+
+[Dược Phẩm An Nhiên](http://127.0.0.1:8000)
+[Đăng Ký Tư Vấn](http://127.0.0.1:8000#form-registration)
+[Đăng Nhập](http://127.0.0.1:8000/admin/consultations)
+
+# Nhận Tư Vấn Sức Khỏe Cộng Đồng Miễn Phí
+Đồng hành cùng sức khỏe gia đình bạn. Hãy điền các thông tin cá nhân và tình trạng sức khỏe dưới đây. Bác sĩ chuyên khoa y tế sẽ tư vấn trực tuyến và giải đáp chi tiết nhất qua Zalo của bạn.
+
+### Phiếu Thông Tin Đăng Ký Tư Vấn
+Vui lòng điền thông tin chính xác để bác sĩ nắm bắt tình trạng sức khỏe tốt nhất.
+
+#### 1 Thông Tin Cá Nhân
+
+#### 2 Khảo Sát Tình Trạng Sức Khỏe
+
+#### 3 Phương Thức Hỗ Trợ
+Sau khi bạn bấm gửi thông tin y tế thành công, một nút liên kết trực tiếp đến Zalo của Bác sĩ tư vấn sẽ hiển thị. Bạn có thể trò chuyện 1-1 riêng tư và bảo mật.
+© 2026 Chương Trình Vì Sức Khỏe Cộng Đồng. All rights reserved.
+Bảo mật thông tin khách hàng tuyệt đối theo quy định của Bộ Y Tế.
