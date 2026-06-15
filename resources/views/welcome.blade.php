@@ -41,6 +41,16 @@
         body {
             font-family: 'Outfit', sans-serif;
         }
+        @media (max-width: 1279px) {
+            .desktop-only-card {
+                display: none !important;
+            }
+        }
+        @media (min-width: 1280px) {
+            .mobile-only-card {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen flex flex-col justify-between selection:bg-teal-500 selection:text-white bg-cover bg-no-repeat bg-center bg-fixed" style="background-image: url('https://i.pinimg.com/1200x/75/07/a5/7507a5c18267753fabde3f018dd3d3c0.jpg');">
@@ -68,10 +78,35 @@
     <main class="flex-grow">
         
         <!-- Hero Section -->
-        <section class="relative overflow-hidden py-16 bg-gradient-to-br from-teal-900 via-teal-800 to-slate-900 text-white">
+        <section class="relative overflow-hidden py-16 text-white bg-gradient-to-br from-teal-950 via-teal-900 to-slate-950">
             <!-- Background grids/graphics -->
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f766e_1px,transparent_1px),linear-gradient(to_bottom,#0f766e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25"></div>
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f766e_1px,transparent_1px),linear-gradient(to_bottom,#0f766e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 z-0"></div>
             
+            <!-- Left Side Product Showcase (Absolute positioned on desktop, hidden on mobile) -->
+            <div class="desktop-only-card hidden xl:flex absolute left-6 2xl:left-12 top-1/2 -translate-y-1/2 z-10">
+                <div class="relative group w-[180px] 2xl:w-[220px]">
+                    <!-- Ambient glow effect -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-35 transition duration-500"></div>
+                    <!-- Product Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-teal-500/10 transform hover:scale-[1.02] transition-all duration-300">
+                        <img src="{{ asset('hero-bg.jpg') }}" alt="KTIRA Omega 3 Krill" class="rounded-2xl w-full h-auto object-contain bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Product Showcase (Absolute positioned on desktop, hidden on mobile) -->
+            <div class="desktop-only-card hidden xl:flex absolute right-6 2xl:right-12 top-1/2 -translate-y-1/2 z-10">
+                <div class="relative group w-[180px] 2xl:w-[220px]">
+                    <!-- Ambient glow effect -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-35 transition duration-500"></div>
+                    <!-- Product Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-teal-500/10 transform hover:scale-[1.02] transition-all duration-300">
+                        <img src="{{ asset('hero-bg.jpg') }}" alt="KTIRA Omega 3 Krill" class="rounded-2xl w-full h-auto object-contain bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Text Content (Keeping original centered layout and styling) -->
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-300 border border-teal-500/20 mb-4 animate-pulse">
                     <span class="w-2 h-2 rounded-full bg-teal-400"></span>
@@ -89,13 +124,25 @@
                 <div class="flex items-center justify-center gap-4 flex-wrap">
                     <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl">
                         <span class="text-teal-400 font-bold">100%</span>
-                        <span class="text-sm text-slate-300">Hoàn Toàn Miễn Phí</span>
+                        <span class="text-slate-300">Hoàn Toàn Miễn Phí</span>
                     </div>
                     <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-teal-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                         </svg>
                         <span class="text-sm text-slate-300">Chọn Chuyên Khoa Phù Hợp</span>
+                    </div>
+                </div>
+
+                <!-- Product Showcase on Mobile/Tablet (centered below text) -->
+                <div class="mobile-only-card flex xl:hidden justify-center mt-8">
+                    <div class="relative group w-full max-w-[200px]">
+                        <!-- Ambient glow effect -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-35 transition duration-500"></div>
+                        <!-- Product Image Container -->
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-teal-500/10 transform hover:scale-[1.02] transition-all duration-300">
+                            <img src="{{ asset('hero-bg.jpg') }}" alt="KTIRA Omega 3 Krill" class="rounded-2xl w-full h-auto object-contain shadow-sm bg-white">
+                        </div>
                     </div>
                 </div>
             </div>
